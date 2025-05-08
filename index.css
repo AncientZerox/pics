@@ -31,7 +31,6 @@ html {
 }
 nav ul li:hover{
     background-color: gray;
-    text-decoration:underline;
     transition: all 0.3s ease-in-out;
 }
 
@@ -117,6 +116,7 @@ header h2{
 
 .section-d:hover{
     transform:scale(1.01);
+    text-decoration:underline;
     transition: all 0.3s ease-in-out;
 }
 

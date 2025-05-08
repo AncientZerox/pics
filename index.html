@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Piezoelectric Generator Science Exhibition Project">
+    <meta name="keywords" content="Piezoelectric, Generator, Science Exhibition, Project,sciencre, exhibition, energy harvesting, piezoelectricity, mechanical stress, electric charge, quartz, ceramics, rectifier circuit, storage capacitor, battery">
+    <meta name="author" content="Heat Harvesters">
+    <title> Science Exhibition</title>
+    <link rel="stylesheet" href="https://AncientZerox.github.io/pics/index.css">
+    <link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/AncientZerox/pics/refs/heads/main/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+        <nav>
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>             
+                <li><a href="#howitworks">How It Works</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>  
+            </ul>
+
+        </nav>
+    <header>
+
+        <img src="https://raw.githubusercontent.com/AncientZerox/pics/refs/heads/main/heat-harvestar-logo.webp">
+        <h2>Piezoelectric Generator Science Exhibition Project</h2>
+    </header>    
+   
+    <section id="home" class="section-a">  
+        <h2> Welcome to our project </h2>
+        <p> This project is designed to showcase the principles of piezoelectricity and its applications in energy harvesting.
+            We hope you find it informative and inspiring! </p> </div>
+    </section>
+
+    <section id="about" class="section-b">  
+        <h2>About</h2>
+        <p> The piezoelectric generator is a device that converts mechanical stress into electrical energy.
+            It works on the principle of piezoelectricity,
+            where certain materials generate an electric charge when subjected to mechanical stress. </p>
+    </section>
+    
+    <section id="howitworks" class="section-c">  
+        <h2>How It Works</h2>
+        <p> The piezoelectric generator consists of a piezoelectric material, such as quartz or certain ceramics,
+            which generates an electric charge when compressed or stretched. 
+            This charge can be harvested and used to power small electronic devices. </p>
+    </section>        
+
+    <section id="components" class="section-d">  
+        <h2>Components</h2>
+        <ul>
+            <li>Piezoelectric material (e.g., quartz, ceramics)</li>
+            <li>Mechanical stress source (e.g., weight, vibration)</li>
+            <li>Rectifier circuit to convert AC to DC</li>
+            <li>Storage capacitor or battery</li>
+        </ul>
+    </section>
+
+    <section id="applications" class="section-e">  
+        <h2>Applications</h2>
+        <p> Piezoelectric generators can be used in various applications, including:</p>
+        <ul>
+            <li>Energy harvesting from footsteps</li>
+            <li>Powering small sensors and devices</li>
+            <li>Vibration energy harvesting</li>
+        </ul>
+    </section>
+
+    <section id="gallery" class="section-f">  
+        <h2>Gallery</h2>
+        <p>Here are some images of our project:</p>
+        <div class="gallery-container">
+            <img src="https://raw.githubusercontent.com/AncientZerox/pics/refs/heads/main/1st-exibition.webp" alt="Gallery Image 1" class="gallery-image">
+            <img src="https://raw.githubusercontent.com/AncientZerox/pics/refs/heads/main/2nd-exibition.webp" alt="Gallery Image 2" class="gallery-image">
+            <img src="https://raw.githubusercontent.com/AncientZerox/pics/refs/heads/main/3rd-exibition.webp" alt="Gallery Image 3" class="gallery-image">
+        </div>
+        
+        <div id="lightbox" class="lightbox">
+            <img id="lightbox-img" alt="Enlarged Image">
+        </div>
+    </section>
+    
+    <section id="contact" class="section-g">  
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to learn more about our project, please feel free to contact us!</p>
+        <p>Email:example@gmail.com</p>
+        <p>Phone: +91 1234567890</p>
+    </section>
+    
+    <footer style=
+    "background-color: gray;
+     bottom:0;
+     text-align: center;
+     padding:0.5em;
+     color: white;
+     margin-top:0;" >
+        <p>&copy; 2025 Heat Harvesters. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        const galleryImages = document.querySelectorAll('.gallery-image');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+    
+        
+        galleryImages.forEach(image => {
+            image.addEventListener('click', () => {
+                lightbox.style.display = 'flex'; 
+                lightboxImg.src = image.src; 
+            });
+        });
+    
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none'; 
+            }
+        });
+    </script>
+    
+
+    </body>
+
+
+</html>
